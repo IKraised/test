@@ -1,0 +1,96 @@
+.score{
+    &__title{
+        color: #765151;        ;
+    }
+    &__list{
+        margin-top: 36px;
+        margin-bottom: 36px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__item{
+        max-width: 268px;
+        width: 100%;
+        background: white;
+        padding-top: 26px;
+        padding-bottom: 26px;
+        min-height: 380px;
+        height: 100%;
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+    &__card{
+
+    }
+    &-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__name{
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 22px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            letter-spacing: 1.29565px;
+            text-transform: uppercase;
+            color: #765151;
+            max-width: 240px;
+
+        }
+        &__text{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 19px;
+            text-align: center;
+            color: #000000;
+            max-width: 242px;
+            min-height: 88px;
+            max-height: 88px;
+            overflow: hidden;
+        }
+        &__img{
+            width: 100%;
+            margin-top: 24px;
+            margin-bottom: 24px;
+            & img{
+                object-fit: contain;
+                width: 100%;
+            }
+        }
+    }
+    &__link{
+        background: #765151;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 130%;
+        /* or 23px */
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        letter-spacing: 3.46589px;
+        font-family: 'Gotham Pro';
+        color: #F0E3DF;
+        padding: 12px 0px;
+        width: 100%;
+        max-width: 408px;
+        text-align: center;
+        margin: 0 auto;
+        transition: all 0.34s ease-in;
+        cursor: pointer;
+        border: 1px solid #765151;
+        
+        &:hover{
+            color: #765151;
+            background: #F0E3DF;
+        }
+    }
+}
+.section_score{
+    background: #EAE7E7;
+}

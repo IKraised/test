@@ -1,0 +1,30 @@
+include components/global.pug
+include components/svg/index.pug
+include components/head/index.pug
+
+- 
+    pageSettings = {
+        title: 'Главная',
+        contacts: false
+    }
+
+
+<!DOCTYPE html>
+html(lang=global.lang)
+    head
+        +head(pageSettings)
+    body.page
+        include components/header/index.pug
+        main.main
+            include components/section/preview/index.pug
+            include components/section/info/index.pug
+            include components/section/score/index.pug
+            include components/section/banner/index.pug
+            include components/section/question/index.pug
+            .section.section_more
+                .container
+                    .more
+                        .more__title C полным списком вопросов можно
+                        a(href="").more__link ознакомиться по ссылке
+        include components/footer/index.pug
+
